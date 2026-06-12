@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 5173
+    port: 5173,
+    allowedHosts: [
+      'sonia-adimario.onrender.com' // Autoriza o domínio do Render
+    ]
   }
 })
