@@ -12,18 +12,37 @@ const photos = Array.from({ length: 31 }, (_, i) => ({
 
 // Timeline data
 const timelineData = [
-  { year: '2015', text: 'O dia que tudo mudou... Nos conhecemos e foi amor à primeira vista! ❤️' },
-  { year: '2016', text: 'Primeiro Dia dos Namorados juntos. O início de uma linda história!' },
-  { year: '2017', text: 'Momentos inesquecíveis, risos e muito amor compartilhado.' },
-  { year: '2018', text: 'Crescendo juntos, superando desafios e fortalecendo nosso vínculo.' },
-  { year: '2019', text: 'Cada dia ao seu lado é presente que agradeço de coração.' },
-  { year: '2020', text: 'Mesmo nos difíceis, você foi minha luz e meu refúgio.' },
-  { year: '2021', text: 'Renovando promessas e sonhando juntos com o futuro.' },
-  { year: '2022', text: 'Mais um ano de cumplicidade, amor e momentos mágicos.' },
-  { year: '2023', text: 'Gratidão e amor que cresce a cada dia.' },
-  { year: '2024', text: '10 anos de amor - você é meu tudo, minha vida, meu lar!' },
-  { year: '2025', text: 'Juntos para sempre, meu amor. Eu te amo para sempre!' },
+  { year: '1996', text: 'Onde tudo começou. Nos conhecemos através de Lécia; vocês me chamavam de NINO. Ela ficava falando de você o tempo todo e dizia que eu era muito inteligente e engraçado.' },
+  { year: '1997', text: 'Fui trabalhar no Hotel da Bahia no Campo Grande, onde passamos vários momentos de felicidades e saímos em um bloco de carnaval: o VIRA LATA.' },
+  { year: '1998', text: 'Continuávamos o namoro. Saíamos ao final de semana para o Pelourinho ou para alguns bazinhos com Valtercio, Jurandi, Lécia etc.' },
+  { year: '1999', text: 'E assim foi o namoro, apesar de algumas briguinhas besta, mas gostávamos um do outro.' },
+  { year: '2000', text: 'Fui trabalhar na WA Sistemas e você conheceu Andre, que toca violão, Fatima Jardim, que trabalhava comigo, e outros...' },
+  { year: '2001', text: 'Você foi morar em Brasília, mas continuamos o namoro por telefone. Haja ligação telefônica! Conversávamos por telefone por horas etc.' },
+  { year: '2002', text: 'Você ainda em Brasília e nós namorando por telefone. Aos finais de semana eu sequer saía de casa. Você me enviava diversas cartas escritas a mão com frases de amor.' },
+  { year: '2003', text: 'Você retornou de Brasília e foi morar com Nety/Ceará. Começou seu trabalho no SAC da BARRA.' },
+  { year: '2004', text: 'Depois você foi morar em Jacy, mas logo depois vagou uma casa de Val e alugou. Lembro até hoje: comprei todos os móveis (mesa, cadeiras, geladeira, sofá, cama, fogão etc.) tudo novo... lembro ainda do quanto você me agradeceu [eu em lágrimas].' },
+  { year: '2005', text: 'Eu já estava trabalhando na BahiaPet junto com Mário. Foi o ano da minha formatura na Rui Barbosa. Foi um momento muito especial pra mim e acho que pra você também.' },
+  { year: '2006', text: 'O namoro continuava. Frequentávamos a casa de Josias e Lindai. Fazíamos pequenas viagens pra ilha, Mutá, na casa da ilha da mãe de Pedro e outros lugares... E aí você ficou grávida de Júlia!!! Foi uma supresa e não esperávamos.' },
+  { year: '2007', text: 'Ano de nascimento de Júlia. Você saiu do trabalho do SAC e fomos morar na casa de minha mãe. Eu me programei financeiramente para comprar tudo de melhor pra Júlia e conseguir juntar uma grana boa pra esperar esse tão esperado nascimento dela. Muita alegria!' },
+  { year: '2008', text: 'Aqui foi o ano que abrimos a empresa com Murilo e fazíamos alguns passeios com Fatima, Murilo e família.' },
+  { year: '2009', text: 'Ano de muitas viagens a trabalho e de cuidados com Júlia.' },
+  { year: '2010', text: 'Júlia começa a frequentar a escola e nosso amor por ela cada vez maior. Nossa primeira viagem pra Gramado.' },
+  { year: '2011', text: 'Já estávamos arrumando pra ir morar em Itapoan.' },
+  { year: '2012', text: 'Passamos 5 anos em Itapoan com felicidades, alegrias e tristezas que fazem parte no relacionamento de qualquer casal.' },
+  { year: '2013', text: 'Sua formatura de Enfermagem. Apesar da luta e dos problemas, éramos felizes.' },
+  { year: '2014', text: 'Continuamos construindo nosso amor dia após dia.' },
+  { year: '2017', text: 'Voltamos para casa de minha mãe agora ela não mais estando lá, pra passar uma chuva, e juntar uma grana pra comprarmos outro apartamento.' },
+  { year: '2018', text: 'Você começou a frequentar a Igreja do Monte e logo depois comecei a frequentar também. Foi uma experiência muito boa.' },
+  { year: '2019', text: 'Ano que começou a pandemia, e passamos ilesos. Começamos a utilizar suplementos alimentares e outros.' },
+  { year: '2020', text: 'Pandemia continuava.' },
+  { year: '2021', text: 'Encontramos o nosso apartamento com essa vista maravilhosa!!! Era tudo que eu queria te dar: mais conforto, um lar, tudo isso por amor a você e Júlia.' },
+  { year: '2022', text: 'Preparando as coisas para a nossa nova moradia. Muita feliz. Orei pra trazer coisas boas no nosso relacionamento.' },
+  { year: '2023', text: 'Apesar das divergências de pensamento e no relacionamento, seguimos em frente e com fé.' },
+  { year: '2024', text: 'Fortalecendo a fé e alinhando nosso amor. O tempo passa rápido. Relacionamento entre um casal não é nada fácil manter. Algumas imaturidades minhas, mas sou e serei sempre grato por tudo que você continuava a fazer, tanto no nosso relacionamento como com Júlia.' },
+  { year: '2025', text: 'Realmente você é uma pessoa incrível. Desculpa pela minha demora. Quero mudar nossa história e que você se sinta amada e realizada...' },
+  { year: '2026', text: 'Este é o ano da minha maior mudança: o ano de construir uma nova história, do meu amadurecimento. Acredite: as pessoas mudam, amadurecem e aprendem com os próprios erros... Quero ter a honra de te mostrar isso e provar que o meu amor por você continua vivo. Sei que, em alguns momentos, ele pareceu esfriar, mas os meus sentimentos permanecem aqui, e estou disposto(a) a lutar por nós.... Quero reconquistar sua confiança, seu carinho e mostrar, com atitudes, tudo aquilo que as palavras nem sempre conseguem expressar.' },
 ]
+
 
 // Pergunta Secreta - opções para Sonia adivinhar
 const SECRET_QUESTION = {
@@ -296,7 +315,7 @@ function CelebrationScreen({ onComplete }) {
         </motion.div>
 
         <h1 className="celebration-title">Feliz Dia dos Namorados!</h1>
-        <p className="celebration-subtitle">Para Sonia, meu amor ❤️</p>
+        <p className="celebration-subtitle">Para Sônia, meu amor ❤️</p>
 
         <motion.button
           className="celebration-button"
@@ -371,7 +390,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7 }}
       >
-        <span>Adimario</span> & <span>Sonia</span>
+        <span>Adimario</span> & <span>Sônia</span>
       </motion.p>
 
       <motion.p
@@ -599,34 +618,45 @@ function LoveLetter() {
           <Sun size={32} className="letter-icon" />
         </div>
 
-        <h2 className="letter-title">Para Minha Sonia</h2>
+        <h2 className="letter-title">Para Minha Sônia</h2>
 
         <div className="letter-body">
-          <p>Meu amor,</p>
+          <p>Meu amor, Sônia,</p>
 
           <p>
-            Quando penso em tudo que vivemos juntos, não consigo deixar de sorrir.
-            Você é a melhor parte dos meus dias, a razão do meu sorriso, o amor da minha vida.
-            Cada momento ao seu lado é um presente que agradeço a Deus.
+            Neste Dia dos Namorados, meu coração me levou até você através destas palavras.
+            Não para lembrar apenas o que vivemos, mas para falar sobre tudo o que ainda acredito que podemos viver juntos.
           </p>
 
           <p>
-            Você tem um coração tão belo, uma alma tão pura, um amor tão grande.
-            Você me completa de uma forma que palavras não conseguem explicar.
-            Sou completamente apaixonado por você - não existe um dia que eu não te ame mais.
+            O tempo nos ensinou muitas coisas. Houve momentos de alegria, momentos difíceis, erros, silêncios e distâncias.
+            Mas, apesar de tudo, existe algo que continua firme dentro de mim: o amor que sinto por você.
           </p>
 
           <p>
-            Neste Dia dos Namorados, quero te dizer que você é tudo para mim.
-            Você é minha namorada, minha melhor amiga, minha família, meu lar.
-            Eu te amo mais do que ontem, e menos do que amanhã.
+            Este é o ano da minha mudança, da reconstrução dos meus sonhos e da vontade sincera de escrever uma nova história.
+            Aprendi que amar não é apenas sentir, mas também cuidar, compreender, reconhecer falhas e lutar por aquilo que realmente importa.
+            E você sempre foi a pessoa mais importante da minha vida.
           </p>
 
-          <p className="letter-signature">
-            Para sempre,<br />
-            <span>Adimario</span> ❤️
+          <p>
+            Talvez, em alguns momentos, o nosso amor tenha parecido enfraquecido pelas dificuldades.
+            Mas nunca deixou de existir dentro de mim. Pelo contrário, a saudade me fez entender ainda mais o valor da sua presença,
+            do seu sorriso, da sua companhia e de tudo o que construímos juntos.
+          </p>
+
+          <p>
+            Hoje, com humildade e sinceridade, quero pedir uma nova oportunidade para mostrar que as pessoas podem mudar,
+            amadurecer e se tornar melhores. Quero provar, não apenas com palavras, mas com atitudes, que meu amor por você continua vivo
+            e que estou disposto a lutar por nós todos os dias.
+          </p>
+
+          <p>
+            Sônia, neste Dia dos Namorados, o meu maior desejo não é receber presentes, mas reconquistar o espaço que sempre existiu entre os nossos corações.
+            Quero voltar a sonhar ao seu lado, compartilhar planos, vencer desafios juntos e construir um futuro que faça jus à nossa história.
           </p>
         </div>
+
 
         <div className="letter-footer">
           <Sparkles size={20} />
@@ -765,7 +795,7 @@ function Footer() {
       <div className="footer-hearts">
         <Heart size={20} fill="#e11d48" />
       </div>
-      <p className="footer-text">Feito com amor para Sonia</p>
+      <p className="footer-text">Feito com amor para Sônia</p>
       <p className="footer-date">Dia dos Namorados • 2026</p>
     </footer>
   )
